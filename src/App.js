@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+// HAVE TO IMPORT USING {} SINCE IT IS A NAMED EXPORT
+// IF DEFAULT EXPORT THEN YOU DO NOT NEED {} FOR IMPORT AND CAN NAME THE IMPORT ANY NAME YOU WANT
+import {Greet} from "./Components/Greet";
+import {HelloWorld} from "./Components/HelloWorld";
+import {ParentComponent} from "./Components/ParentComponent";
+import {IdCard} from "./Components/IdCard";
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+
+            < ParentComponent />
+
+            {/* prop set here */}
+            <Greet whatEverYouWant='KEVIN'/>
+
+            <HelloWorld greet={'HELLO THERE '} message={'MY FRESH REACT WORLD!'}/>
+            < IdCard />
+
+
+        </div>
+    );
 }
 
 export default App;

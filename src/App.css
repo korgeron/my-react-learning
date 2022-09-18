@@ -7,6 +7,55 @@
   pointer-events: none;
 }
 
+.badge{
+  width: 100vw;
+  display: flex;
+  position: absolute;
+  align-items: baseline;
+  justify-content: space-evenly;
+  bottom: 0;
+
+}
+
+.Greet{
+  position: relative;
+  top: 45vh;
+  color: red;
+  animation: infinite ease-in-out;
+  animation-name: colorC;
+  animation-duration: 3s;
+animation-direction: alternate;
+}
+@keyframes colorC{
+  from{
+    color: blue;
+    rotate: -50deg;
+    font-size: 0;
+  }
+  to{
+    color: red;
+    rotate: 50deg;
+    font-size: 30px;
+  }
+}
+
+.HelloWorld{
+  position: absolute;
+  top: 40vh;
+  left: 0;
+  right: 0;
+}
+.greetButton{
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  height: 5vh;
+  border-radius: 3%;
+
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
