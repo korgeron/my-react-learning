@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background: black;
+    display: grid;
+    grid-template-areas:
+            'nav'
+            'content';
+    grid-template-rows: 15vh auto;
+}
+
+.navbar{
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100vw;
+    align-items: center;
+}
+
+.content{
+    overflow-y: scroll;
+    grid-area: content;
+    display: flex;
+    margin: 0 1em 0 1em;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+h1{
+    color: white;
+}
+
+.prfCard{
+    margin-bottom: 1em;
+    background: floralwhite;
+    border-radius: 1em;
+    width: 30vw;
+    height: 30vh;
+    display: grid;
+    grid-template-areas:
+            'img info';
+    grid-template-columns: 1fr 2fr;
+}
+
+.prfImg{
+    grid-area: img;
+    border-right: 1px solid black;
+    background-image: url("logo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.prfInfo{
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /*align-items: center;*/
+    padding: 0 1vw 0 1vw;
+}
+
+.lang{
+    color: white;
+}
+
+.addInfoCard{
+    border-radius: 1em;
+    height: 30vh;
+    width: 40vw;
+    background: floralwhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
