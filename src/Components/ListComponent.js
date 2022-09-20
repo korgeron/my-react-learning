@@ -6,7 +6,7 @@ export const ListComponent = ()=>{
         <div>
             {
                 items.map((item) => {
-                    return <div className={'lang'}>{item}</div>
+                    return <div key={item} className={'lang'}>{item}</div>
                 })
             }
         </div>

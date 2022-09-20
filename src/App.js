@@ -7,9 +7,10 @@
 // import './App.css';
 
 import './MyApp.css'
-import {Candidate} from "./Components/Candidate";
-import {ListComponent} from "./Components/ListComponent";
-import {AddCandidate} from "./Components/AddCandidate";
+// import {Candidate} from "./Components/Candidate";
+// import {ListComponent} from "./Components/ListComponent";
+// import {Form} from "./Components/Form";
+import {FetchMovie} from "./Components/FetchMovie";
 
 function App() {
     return (
@@ -19,10 +20,14 @@ function App() {
             <div className={'navbar'}>
                 <h1>Hello Im Learning React!</h1>
             </div>
+
+
             <div className={'content'} >
-                <Candidate />
+                {/*Todo: CODE GOES HERE*/}
+                {/*<Form />*/}
+                {/*<Candidate />*/}
                 {/*<ListComponent />*/}
-                <AddCandidate />
+                <FetchMovie />
             </div>
         </div>
 

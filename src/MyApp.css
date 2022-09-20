@@ -1,9 +1,10 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-.container{
+
+.container {
     height: 100vh;
     width: 100vw;
     background: black;
@@ -14,7 +15,7 @@
     grid-template-rows: 15vh auto;
 }
 
-.navbar{
+.navbar {
     grid-area: nav;
     display: flex;
     justify-content: center;
@@ -23,7 +24,7 @@
     align-items: center;
 }
 
-.content{
+.content {
     overflow-y: scroll;
     grid-area: content;
     display: flex;
@@ -32,11 +33,11 @@
     flex-wrap: wrap;
 }
 
-h1{
+h1 {
     color: white;
 }
 
-.prfCard{
+.prfCard {
     margin-bottom: 1em;
     background: floralwhite;
     border-radius: 1em;
@@ -48,7 +49,7 @@ h1{
     grid-template-columns: 1fr 2fr;
 }
 
-.prfImg{
+.prfImg {
     grid-area: img;
     border-right: 1px solid black;
     background-image: url("logo.svg");
@@ -57,7 +58,7 @@ h1{
     background-position: center;
 }
 
-.prfInfo{
+.prfInfo {
     grid-area: info;
     display: flex;
     flex-direction: column;
@@ -66,11 +67,11 @@ h1{
     padding: 0 1vw 0 1vw;
 }
 
-.lang{
+.lang {
     color: white;
 }
 
-.addInfoCard{
+.addInfoCard {
     border-radius: 1em;
     height: 30vh;
     width: 40vw;
@@ -79,4 +80,70 @@ h1{
     justify-content: center;
     align-items: center;
 
+}
+
+.MyForm {
+    border-radius: 1em;
+    height: 50vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1em 1em 0 1em;
+    background: antiquewhite;
+}
+
+.MyForm > label {
+    margin: 0 0 .5em 0;
+
+
+}
+
+.border {
+    border-bottom: 1px solid goldenrod;
+    width: 20vw;
+}
+
+.MyForm > input {
+    margin-top: 1em;
+    width: 25vw;
+}
+
+.MyForm > button {
+    margin: 1em 0 0 0;
+    width: 20vw;
+}
+
+.MovieCard {
+    height: 50vh;
+    width: 15vw;
+    background: white;
+    border-radius: .5em;
+    display: grid;
+    grid-template-areas:
+            'title'
+            'poster'
+            'rate';
+    grid-template-rows: 2.5vh 45vh 1vh;
+}
+
+.MovieCard > img {
+    height: fit-content;
+    width: 15vw;
+    grid-area: poster;
+
+}
+.MovieTitle{
+    /*color: white;*/
+    grid-area: title;
+    text-align: center;
+}
+.MovieRate{
+    /*color: white;*/
+    grid-area: rate;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

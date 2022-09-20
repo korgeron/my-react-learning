@@ -11,9 +11,7 @@ export const Candidate = () => {
             }
             return (
                 <div className={'prfCard'} key={name}>
-                    <div className={'prfImg'}>
-
-                    </div>
+                    <div className={'prfImg'} img={'prfImg'}></div>
                     <div className={'prfInfo'}>
                         <div>{name}</div>
                         <div>Unknown</div>
