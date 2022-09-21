@@ -115,35 +115,71 @@ h1 {
     width: 20vw;
 }
 
-.MovieCard {
+/*.MovieCard {*/
+/*    height: 50vh;*/
+/*    width: 15vw;*/
+/*    background: white;*/
+/*    border-radius: .5em;*/
+/*    display: grid;*/
+/*    grid-template-areas:*/
+/*            'title'*/
+/*            'poster'*/
+/*            'rate';*/
+/*    grid-template-rows: 2.5vh 45vh 1vh;*/
+/*}*/
+
+/*.MovieCard > img {*/
+/*    height: fit-content;*/
+/*    width: 15vw;*/
+/*    grid-area: poster;*/
+
+/*}*/
+/*.MovieTitle{*/
+/*    !*color: white;*!*/
+/*    grid-area: title;*/
+/*    text-align: center;*/
+/*}*/
+/*.MovieRate{*/
+/*    !*color: white;*!*/
+/*    grid-area: rate;*/
+
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+
+.MovieCard{
+    height: 40vh;
+    width: 20vw;
+}
+
+.CounterCard{
+    background: wheat;
     height: 50vh;
-    width: 15vw;
-    background: white;
-    border-radius: .5em;
-    display: grid;
-    grid-template-areas:
-            'title'
-            'poster'
-            'rate';
-    grid-template-rows: 2.5vh 45vh 1vh;
-}
-
-.MovieCard > img {
-    height: fit-content;
-    width: 15vw;
-    grid-area: poster;
-
-}
-.MovieTitle{
-    /*color: white;*/
-    grid-area: title;
-    text-align: center;
-}
-.MovieRate{
-    /*color: white;*/
-    grid-area: rate;
-
+    width: 30vw;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.CounterCard > button{
+    margin: .5em;
+    width: 2vw;
+    height: 3vh;
+}
+
+.nav{
+    height: 10vh;
+    width: 90vw;
+    list-style: none;
+    color: wheat;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav > li{
+    padding-right: 1em;
+}
+.nav > li:hover{
+    cursor: pointer;
+    color: white;
 }

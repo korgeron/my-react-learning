@@ -1,6 +1,5 @@
 import {useEffect, useState} from "react";
 import {keys} from "../keys";
-import {findAllByDisplayValue} from "@testing-library/react";
 
 export const FetchMovie = () => {
 
